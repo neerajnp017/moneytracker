@@ -117,6 +117,17 @@ input[type="number"] {
     padding: 10px;
 }
 
+.list li:hover {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 10px 0px 10px 15px;
+    padding: 10px;
+}
+
 .list li.plus {
     border-right: 5px solid #2ecc71;
 }
