@@ -1,4 +1,4 @@
-console.log('hello');
+// console.log('hello');
 
 const balance = document.getElementById('balance');
 const money_plus = document.getElementById('money-plus');
@@ -82,13 +82,13 @@ function addTransactionDom(transaction) {
 
 function updateValues() {
     const amounts = transactions.map(amountValue => amountValue.amount)
-    console.log(amounts)
+//     console.log(amounts)
     const total = amounts.reduce((acc, num) => (acc += num), 0).toFixed(2);
-    console.log(total)
+//     console.log(total)
     const income = amounts.filter(item => item > 0).reduce((acc, num) => (acc += num), 0).toFixed(2);
-    console.log(income)
+//     console.log(income)
     const expense = (amounts.filter(item => item < 0).reduce((acc, num) => (acc += num), 0) * -1).toFixed(2)
-    console.log(expense)
+//     console.log(expense)
 
     balance.innerText = `₹${total}`;
     money_plus.innerText = `₹${income}`
